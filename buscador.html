@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/taggle.css">
+    <style>
+
+    </style>
+    <script src="./js/taggle.js"></script>
+   
+</head>
+<body>
+    <h1>Buscador</h1>
+    <div  id="divBuscador"></div>
+    <div>
+        <button id="btnBuscar" >Buscar</button>
+    </div>
+</body>
+
+
+    <script>
+        var etiquetas = ['planeamiento'];
+            new Taggle('divBuscador', {
+            tags: ['planeamiento' ],
+            onTagAdd: function(event, tag) {
+                etiquetas.push(tag);
+            }
+            });
+
+
+            document.getElementById("btnBuscar").addEventListener("click", buscar);
+
+            function buscar() {
+             console.log("Etiquetas", etiquetas  );             
+            }
+
+    </script>
+</html>
