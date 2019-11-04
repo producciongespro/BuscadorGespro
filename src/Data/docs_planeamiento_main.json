@@ -1,0 +1,134 @@
+[
+    {
+        "nivel" : "primaria",
+        "anno" : "4",
+        "materia" : "ciencias",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/ciencias/ciencias-cuarto.pdf",
+        "etiquetas" : "ciencias"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "1",
+        "materia" : "espanol",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "9",
+        "materia" : "artesIndustriales",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/noveno.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "8",
+        "materia" : "artesIndustriales",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/octavo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "7",
+        "materia" : "artesIndustriales",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/setimo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "10",
+        "materia" : "biologia",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "11",
+        "materia" : "biologia",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "10",
+        "materia" : "fisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "11",
+        "materia" : "fisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "10",
+        "materia" : "quimica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_10-11.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "11",
+        "materia" : "quimica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_10-11.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "7",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica7.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf",
+        "etiquetas" : ["plan", ]
+
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "8",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica8.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "9",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica9.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "10",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica10.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "11",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica11.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    }
+
+]
