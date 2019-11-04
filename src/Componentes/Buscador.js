@@ -27,11 +27,11 @@ const listaJson =
 class Buscador extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            coincidenias : 0
+        this.state = {        
+            htmlResultado : []
           }
         this.etiquetas = [];
-        this.htmlResultado="";
+        
     }
 
 
@@ -73,6 +73,7 @@ class Buscador extends Component {
         let limiteListaJson = listaJson.length;
         let limiteEtiquetas = this.etiquetas.length;
         let tmpCoincidencias = 0;
+        var htmlLista=[];
 
         //console.log("limiteEtiquetas", limiteEtiquetas );
         for (let index = 0; index < limiteListaJson; index++) {            
@@ -100,15 +101,13 @@ class Buscador extends Component {
                     del json. 
                 */
                console.log("Renderizar:", listaJson[index] );
-               tmpCoincidencias++
+                let htmlGrupo = (
+                        <h1 key={"grupo"+index} >  {listaJson[index].nombre}  </h1>
+                )
+               htmlLista.push (htmlGrupo);              
+               this.setState({ htmlResultado: htmlLista });              
             
-               this.setState({ coincidenias: tmpCoincidencias }, ()=> {
-                   console.log( "coincidenias", this.state.coincidenias );
-                   this.htmlResultado = (
-                    <h1>  {listaJson[index].nombre}  </h1>
-                    //listaJson[index].etiquetas
-                )                   
-               } );                                
+                                             
             }
             
         }
@@ -127,7 +126,7 @@ class Buscador extends Component {
 
             <div className="">
                 {
-                    this.htmlResultado
+                    this.state.htmlResultado
                 }
             </div>
 
