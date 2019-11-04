@@ -16,7 +16,11 @@ const listaJson =
     {
         "nombre" : "prueba 3",
         "etiquetas" : "planeamiento, religion, religiosa,  segundo, 2, enero"
-    }
+    },
+    {
+        "nombre" : "prueba 4",
+        "etiquetas" : "planeamiento, español, segundo, 2, enero"
+    },
 ]
 
 
@@ -24,9 +28,10 @@ class Buscador extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            buscarActivo : false
+            coincidenias : 0
           }
         this.etiquetas = [];
+        this.htmlResultado="";
     }
 
 
@@ -46,13 +51,19 @@ class Buscador extends Component {
         this.buscador();                
     }
 
-    quitarTildes (texto) {
+    tratarPalabras (texto) {
+        //Quita las tildes de cada vocal
         let tmp=texto;
-         tmp = tmp.replace(/á/g, "a");
-         tmp = tmp.replace(/é/g, "e");
-         tmp = tmp.replace(/í/g, "i");
-         tmp = tmp.replace(/ó/g, "o");
-         tmp = tmp.replace(/ú/g, "u");
+        if (isNaN(tmp)) {
+            console.log("Etiqueta de tipo texto");            
+            tmp = tmp.replace(/á/g, "a");
+            tmp = tmp.replace(/é/g, "e");
+            tmp = tmp.replace(/í/g, "i");
+            tmp = tmp.replace(/ó/g, "o");
+            tmp = tmp.replace(/ú/g, "u");
+            //Convierte toda la cadena a minúscula
+            tmp = tmp.toLowerCase();  
+        }  
         return tmp;
     }
 
@@ -61,22 +72,44 @@ class Buscador extends Component {
         //console.log("lista", listaJson );
         let limiteListaJson = listaJson.length;
         let limiteEtiquetas = this.etiquetas.length;
-        let sumaCoincidencias = 0;
-        console.log("limiteEtiquetas", limiteEtiquetas );
-        for (let index = 0; index < limiteListaJson; index++) {
+        let tmpCoincidencias = 0;
+
+        //console.log("limiteEtiquetas", limiteEtiquetas );
+        for (let index = 0; index < limiteListaJson; index++) {            
         //Ciclo con la cantidad de registros del json
+        let sumaCoincidencias = 0;
             for (let i = 0; i < limiteEtiquetas; i++) {
                 //Revisa cada una de las etiquetas que ha entrado el usuario con la propiedad "etiquetas" el registro actual (json)
-                let tmpEtiqueta = this.quitarTildes(this.etiquetas[i]);
+                let tmpEtiqueta = this.tratarPalabras(this.etiquetas[i]);
                 let pos = listaJson[index].etiquetas.search( tmpEtiqueta);
-                console.log("posicion de", tmpEtiqueta, "->", pos    ); 
+                //console.log("posicion de", tmpEtiqueta, "->", pos    ); 
                 //Incrementa suma en caso de que haya Comprobación de coincidencias 
                 if (pos > -1) {
                     sumaCoincidencias++;
                 }                               
             }
             //Suma de coincidencias
-            console.log("Suam coincidencias", sumaCoincidencias, "en el registro del json:", index  );
+            //console.log("Suam coincidencias", sumaCoincidencias, "en el registro del json:", index  );
+           //console.log("limiteEtiquetas----",limiteEtiquetas, "****sumaCoincidencias", sumaCoincidencias   );
+            
+            if (limiteEtiquetas === sumaCoincidencias ) {
+                /*  
+                    Renderizado del regsitro
+                    Condición que se da cuando todas las etiquetas ingresadas 
+                    por el usuario coinciden con las etiquetas del registro actual              
+                    del json. 
+                */
+               console.log("Renderizar:", listaJson[index] );
+               tmpCoincidencias++
+            
+               this.setState({ coincidenias: tmpCoincidencias }, ()=> {
+                   console.log( "coincidenias", this.state.coincidenias );
+                   this.htmlResultado = (
+                    <h1>  {listaJson[index].nombre}  </h1>
+                    //listaJson[index].etiquetas
+                )                   
+               } );                                
+            }
             
         }
   
@@ -91,6 +124,13 @@ class Buscador extends Component {
           <div>
               <button id="btnBuscar" onClick={this.handlerBuscar} >Buscar</button>              
           </div>
+
+            <div className="">
+                {
+                    this.htmlResultado
+                }
+            </div>
+
             </div>
          );
     }
